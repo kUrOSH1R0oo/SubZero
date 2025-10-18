@@ -297,18 +297,6 @@ Commands are categorized by module for clarity. Arguments are specified after th
 | Attacks          | pdf_brute                       | :pdf_path:wordlist.txt (path, path)         | Brute-force PDF password.                                                   |
 | Utility          | help_full                       | None                                        | List all commands in a formatted table.                                     |
 
-### Table 2: Chainable and Unchainable Commands
-
-| Chainable Commands (Can be combined in sequences) | Unchainable Commands (Must be used alone) |
-|---------------------------------------------------|--------------------------------------------|
-| All Encodings (b32e, b32d, b64e, b64d, b85e, b85d, hex_encode, hex_decode, url_encode, url_decode) | caesar_brute |
-| All Hashes (hash_<algo>, hash_<scheme>) | vigenere_brute |
-| All Classic Ciphers (rot5, rot13, rot18, rot47, caesar_encode, caesar_decode, vigenere_encode, vigenere_decode, sub_encode, sub_decode, xor_encode, xor_decode, bacon_encode, bacon_decode, a1z26_encode, a1z26_decode, brainfuck, rail_encode, rail_decode, adfgx_encode, adfgx_decode) | hashlib_brute_<algo> |
-| All Symmetric (generate_salt, generate_fernet_key, fernet_encrypt, fernet_decrypt, aes_key, aes_encrypt, aes_decrypt, des_key, des_encrypt, des_decrypt, chacha20_key, chacha20_encrypt, chacha20_decrypt, camellia_key, camellia_encrypt, camellia_decrypt) | hash_brute_<scheme> |
-| All Asymmetric (rsa_key, rsa_encrypt, rsa_decrypt, rsa_sign, rsa_verify, ecdsa_key, ecdsa_sign, ecdsa_verify, ecdh_key, ecdh_derive, dsa_key, dsa_sign, dsa_verify) | zip_brute |
-| All Text Transforms (replace_text, reverse_by_char, reverse_by_byte, reverse_by_line, to_upper, to_lower, to_capitalize, to_alternating, to_inverse) | pdf_brute |
-| All Conversions (asc_to_morse, morse_to_asc, asc_to_nato, nato_to_asc, morse_to_wav, ascii_to_bin, bin_to_ascii, ascii_to_hex, hex_to_ascii, ascii_to_dec, dec_to_ascii, bin_to_hex, hex_to_bin, ascii_to_oct, oct_to_ascii, bin_to_oct, oct_to_bin, hex_to_oct, oct_to_hex, dec_to_oct, oct_to_dec) | help_full |
-
 Note: Chainable commands process data sequentially, while unchainable ones (primarily attacks and utilities) perform standalone operations like brute-forcing or listing.
 
 ## License
