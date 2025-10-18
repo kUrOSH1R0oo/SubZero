@@ -1,6 +1,6 @@
 # SubZero: Putting the A1S in Your Cryptography Problems
 
-![SUBZERO Banner](https://github.com/kUrOSH1R0oo/SubZero/blob/main/A1S.png)  
+![SUBZERO Banner](https://github.com/kUrOSH1R0oo/SubZero/blob/master/A1S.png)  
 
 ## Overview
 
